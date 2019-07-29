@@ -25,5 +25,15 @@ public class Main {
 
         Team<FootballPlayer> NY = new Team<>("NY");
         NY.matchResult(LA, 300, 200);
+
+        System.out.println("Rankings");
+        System.out.println(LA.getName() + ": " + LA.rankings());
+        System.out.println(SEA.getName() + ": " + SEA.rankings());
+        System.out.println(NY.getName() + ": " + NY.rankings());
+
+        System.out.println(LA.compareTo(NY));
+        System.out.println(NY.compareTo(LA));
+//        Below doesn't work
+//        System.out.println(LA.compareTo(SEA));
     }
 }
